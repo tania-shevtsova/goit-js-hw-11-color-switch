@@ -20,10 +20,11 @@ const timer = {
       return;
     }
     this.isActive = true;
-    function changeColor(){
-         refs.bodyTag.style.backgroundColor = colors[randomIntegerFromInterval(0, 6)];
-      }
-     changeColor();
+    function changeColor() {
+      refs.bodyTag.style.backgroundColor =
+        colors[randomIntegerFromInterval(0, 6)];
+    }
+    changeColor();
     this.timerId = setInterval(changeColor, 1000);
   },
 
